@@ -15,7 +15,7 @@
         <section>Speisekarten -> Fonni</section>
         <section>About us -> Fonni</section>
         <section class="bg-red-600 p-10 flex flex-row">
-            <div class="gallery flex flex-col sm:flex-row sm:flex-wrap gap-7">
+            <div class="gallery justify-center flex flex-col sm:flex-row sm:flex-wrap gap-7">
                 <img src="https://picsum.photos/id/237/300/200">
                 <img src="https://picsum.photos/id/257/300/200">
                 <img src="https://picsum.photos/id/227/300/200">
@@ -28,7 +28,26 @@
             </div>
         </section>
         <section>Bewertungen -> Chris</section>
-        <section></section>
+        <section class="p-10 flex justify-center flex-col sm:flex-row gap-10">
+            <form class="w-2/4  flex items-start flex-col bg-red-50 py-7">
+                <label class="min-w-2/4 mb-1" for="name">Name: </label>
+                <input class="border-2 w-full mb-5 p-2" id="name" type="text" placeholder="Name">
+                <label class="min-w-2/4 mb-1" for="mail">E-Mail:</label>
+                <input class="border-2 w-full mb-5 p-2" id="mail" type="mail" placeholder="E-Mail">
+                <label class="min-w-2/4 mb-1" for="tel">Telefon</label>
+                <input class="border-2 w-full mb-5 p-2" type="tel" id="tel" placeholder="Telefon">
+                <div class="flex w-full justify-between gap-5">
+                    <label class="min-w-2/4 mb-1" class="">Datum:</label>
+                    <input class="border-2 w-full mb-5 p-2" type="date">
+                    <label class="min-w-2/4 mb-1" class="">Uhrzeit:</label>
+                    <input class="border-2 w-full mb-5 p-2" type="time">
+                 </div>
+                 <label class="min-w-2/4 mb-1" for="tel">Nachricht</label>
+                 <textarea class="border-2 w-full mb-5 h-20 p-2"></textarea>
+                <button class="bg-red-500 p-3 font-bold text-white">Reservierung anfragen!</button>
+            </form>
+            <img class="w-2/4" src="https://picsum.photos/id/627/600/400">
+        </section>
     </main>
     <footer>Footer ((adresse, kontaktdaten, öffnungszeiten, social media links)) -> Chris</footer>
 </body>
