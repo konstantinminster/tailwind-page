@@ -8,7 +8,8 @@
 </head>
 <body>
 
-    <header class="flex sm:justify-between bg-red-700 p-7 flex-col sm:flex-row">
+    <header class="bg-red-700 sm:mb-5">
+      <div class="sm:max-w-7xl flex sm:justify-between p-6 m-auto flex-col sm:flex-row">
         <img class="max-w-16 max-h-16 mx-auto sm:mx-0" src="https://img.icons8.com/wired/64/huawei-logo.png">
         <ul class="flex items-center sm:gap-2.5 text-nowrap sm:flex-nowrap flex-col sm:flex-row">
             <li class="w-full text-center"><a class="p-3 sm:bg-white hover:bg-opacity-50 block text-white sm:text-black" href="#about">About us</a></li>
@@ -16,14 +17,12 @@
             <li class="w-full text-center"><a class="p-3 sm:bg-white hover:bg-opacity-50 block text-white sm:text-black" href="#menu">Menu</a></li>
             <li class="w-full text-center"><a class="p-3 sm:bg-white hover:bg-opacity-50 block text-white sm:text-black" href="#reservation">Reservierung</a></li>
         </ul>
+      </div>
     </header>
-    
-
     <main>
 
-        <section id="about" class="flex items-center justify-center h-screen bg-gray-100">
-
-        <div class="flex flex-col md:flex-row items-center justify-center space-x-6 p-6 bg-white shadow-lg rounded-lg ">
+        <section id="about" class="flex items-center justify-center">
+        <div class="sm:max-w-7xl flex flex-col md:flex-row items-center justify-center space-x-6 p-6 bg-white shadow-lg rounded-lg ">
             <div class="text-center md:text-left md:w-1/2 " >
                 <h1 class="text-3xl font-bold mb-4"><strong>Dumpling Delight</strong></h1>
                 <p class="text-lg mb-4"> 
@@ -45,26 +44,22 @@
                 <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Restaurant Bild">
             </div>
         </div>
-
         </section>
-
-
 
         <section id="menu" class="flex flex-col justify-center items-center my-6">
           
-                <h1 class="font-bold text-3xl my-6">Browse Menu</h1>
-           
-                <ul class= "flex gap-12">
-                    <li> <img src="menu-image/menu1.jpg" alt="menu1"width="300px" class="hover:opacity-75"></li>
-                    <li><img src="menu-image/menu2.jpg" alt="menu2" width="300px" class="hover:opacity-75"></li>
-                    <li><img src="menu-image/menu3.jpg" alt="menu3" width="300px"class="hover:opacity-75"></li>      
+            <h1 class="font-bold text-3xl my-6">Browse Menu</h1>
+        
+            <ul class= "flex gap-12">
+                <li><img src="menu-image/menu1.jpg" alt="menu1"width="300px" class="hover:opacity-75"></li>
+                <li><img src="menu-image/menu2.jpg" alt="menu2" width="300px" class="hover:opacity-75"></li>
+                <li><img src="menu-image/menu3.jpg" alt="menu3" width="300px"class="hover:opacity-75"></li>      
             </ul>         
         </section>
 
-        <section>About us -> Fonni</section>
-        <section id="gallery" class="bg-red-600 p-7 flex flex-row overflow-hidden">
-            <div class="gallery relative flex justify-center flex-row gap-7 max-h-96">
-                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute left-0 top-1/2  transform -translate-y-1/2 p-0 rounded-full hover:cursor-pointer font-bold size"
+        <section id="gallery" class="bg-red-700 p-6 flex flex-row justify-center overflow-hidden">
+            <div class="sm:max-w-7xl overflow-hidden relative flex justify-center flex-row gap-6 max-h-96">
+                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute left-10 top-1/2  transform -translate-y-1/2 p-0 rounded-full hover:cursor-pointer font-bold size"
                     src="https://img.icons8.com/ios/50/circled-left-2.png">
                 <img class="h-full" src="img/galllery/gal-1.jpg">
                 <img class="h-full" src="img/galllery/gal-2.jpg">
@@ -75,13 +70,13 @@
                 <img class="h-full" src="img/galllery/gal-8.jpg">
                 <img class="h-full" src="img/galllery/gal-5.jpg">
                 <img class="h-full" src="img/galllery/gal-6.jpg">
-                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute top-1/2 transform -translate-y-1/2 right-0 table-column-group p-0 rounded-full hover:cursor-pointer font-bold size"
+                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute right-10 top-1/2 transform -translate-y-1/2 right-0 table-column-group p-0 rounded-full hover:cursor-pointer font-bold size"
                     src="https://img.icons8.com/ios/50/circled-right-2.png">
             </div>
         </section>
-        <section>Bewertungen -> Chris</section>
-        <section id="reservation" class="p-10 flex justify-center flex-col sm:flex-row gap-10 overflow-y-hidden">
-            <form class="sm:w-2/4 flex items-start flex-col py-7  h-fit">
+
+        <section id="reservation" class="sm:max-w-7xl mx-auto p-6 flex justify-center flex-col sm:flex-row gap-6 overflow-y-hidden">
+            <form class="sm:w-2/4 flex items-start flex-col py-6  h-fit">
                 <h2 class="text-2xl w-full mb-5 font-bold">Tisch reservieren</h2>
                 <label class="sm:min-w-2/4 mb-1" for="name">Name: </label>
                 <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" id="name" type="text" placeholder="Name">
@@ -103,8 +98,8 @@
             </div>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container sm:max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Kontaktieren Sie uns -->
           <div>
             <h2 class="text-lg font-bold mb-2">Kontaktieren Sie uns</h2>
@@ -139,7 +134,7 @@
             <p><a href="mailto:info@dumplingdelight.de" class="text-blue-400">info@dumplingdelight.de</a></p>
           </div>
         </div>
-        <div class="container mx-auto px-4 mt-4 flex flex-col md:flex-row justify-between items-center text-sm">
+        <div class="container sm:max-w-7xl mx-auto px-4 mt-4 flex flex-col md:flex-row justify-between items-center text-sm">
           <div>
             <a href="#" class="text-blue-400">Datenschutzerklärung</a>
             <span class="mx-2">|</span>
