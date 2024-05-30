@@ -6,12 +6,54 @@
     <title>Dumpling Restaurant - Tailwind Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-red-300">
-    <header>
-        Logo + Navi -> Julia
+<body>
+
+
+    <header class="flex w-1/4mx-auto mt-7 px-10 flex-wrap ">
+        <img width="35rem" height="100%" viewBox="0 0 169 40" src="https://i.postimg.cc/wTQJ3hgb/error.png" alt="Logo">
+        <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+        <ul class="basis-1/4 text-black 600 rounded-full ml-2">
+            <div class="bg-white rounded-full bg-no-repeat items-center"><a href="Home">Home</a></div>
+            <div class="bg-white rounded-full"><a href="About">About</a></li></div>
+            <div class="bg-white rounded-full"><a href="Menu">Menu</a></div>
+            <div class="bg-white rounded-full"><a href="testReservation">Reservation</a></div>
+
+        </ul>
+        </nav>
     </header>
+    
+
     <main>
-        <section>Hero -> Chris</section>
+
+        <section class="flex items-center justify-center h-screen bg-gray-100">
+
+        <div class="flex flex-col md:flex-row items-center justify-center space-x-6 p-6 bg-white shadow-lg rounded-lg ">
+            <div class="text-center md:text-left md:w-1/2 " >
+                <h1 class="text-3xl font-bold mb-4"><strong>Dumpling Delight</strong></h1>
+                <p class="text-lg mb-4"> 
+                    Willkommen bei Dumpling Delight – Ihr neues Lieblingsziel 
+                    für authentische, handgemachte Dumplings! Unsere köstlichen 
+                    Kreationen werden täglich frisch zubereitet und entführen Sie auf eine kulinarische Reise nach Asien. Genießen Sie die Vielfalt unserer gefüllten Teigtaschen 
+                    in gemütlicher Atmosphäre. Besuchen Sie uns und erleben Sie 
+                    Geschmackserlebnisse, die Ihre Sinne verzaubern werden!
+                </p>
+                <div class="mt-2 flex flex-row md:w-1/2 space-x-6 justify-items-center content-evenly items-stretch">
+                    <img src="dg1.webp" alt="Dumpling Bild" class="rounded-lg shadow-md ">
+                    <img src="dg2.webp" alt="Dumpling Bild" class="rounded-lg shadow-md ">
+                    <img src="dg3.webp" alt="Dumpling Bild" class="rounded-lg shadow-md ">
+                </div>
+                <button class="mt-8 px-4 py-2 bg-blue-500 text-white rounded"> Unser Menü </button>
+            </div>
+
+            <div class="flex-row h-fit" >
+                <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Restaurant Bild">
+            </div>
+        </div>
+
+        </section>
+
+        <br>
+
         <section class="flex flex-col justify-center items-center my-6">
           
                 <h1 class="font-bold text-3xl my-6">Browse Menu</h1>
@@ -22,10 +64,48 @@
                     <li><img src="menu-image/menu3.jpg" alt="menu3" width="300px"class="hover:opacity-75"></li>      
             </ul>         
         </section>
+
         <section>About us -> Fonni</section>
-        <section>Gallery -> Konstantin</section>
+        <section class="bg-red-600 p-7 flex flex-row overflow-hidden">
+            <div class="gallery relative flex justify-center flex-row gap-7 max-h-96">
+                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute left-0 top-1/2  transform -translate-y-1/2 p-0 rounded-full hover:cursor-pointer font-bold size"
+                    src="https://img.icons8.com/ios/50/circled-left-2.png">
+                <img class="h-full" src="img/galllery/gal-1.jpg">
+                <img class="h-full" src="img/galllery/gal-2.jpg">
+                <img class="h-full" src="img/galllery/gal-3.jpg">
+                <img class="h-full" src="img/galllery/gal-4.jpg">
+                <img class="h-full" src="img/galllery/gal-7.jpg">
+                <img class="h-full" src="img/galllery/gal-9.jpg">
+                <img class="h-full" src="img/galllery/gal-8.jpg">
+                <img class="h-full" src="img/galllery/gal-5.jpg">
+                <img class="h-full" src="img/galllery/gal-6.jpg">
+                <img class="bg-white bg-opacity-50 hover:bg-opacity-80 absolute top-1/2 transform -translate-y-1/2 right-0 table-column-group p-0 rounded-full hover:cursor-pointer font-bold size"
+                    src="https://img.icons8.com/ios/50/circled-right-2.png">
+            </div>
+        </section>
         <section>Bewertungen -> Chris</section>
-        <section>Tischreservierung -> Konstantin</section>
+        <section class="p-10 flex justify-center flex-col sm:flex-row gap-10 overflow-y-hidden">
+            <form class="sm:w-2/4 flex items-start flex-col py-7  h-fit">
+                <h2 class="text-2xl w-full mb-5 font-bold">Tisch reservieren</h2>
+                <label class="sm:min-w-2/4 mb-1" for="name">Name: </label>
+                <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" id="name" type="text" placeholder="Name">
+                <label class="min-w-2/4 mb-1" for="mail">E-Mail:</label>
+                <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" id="mail" type="mail" placeholder="E-Mail">
+                <label class="min-w-2/4 mb-1" for="tel">Telefon</label>
+                <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" type="tel" id="tel" placeholder="Telefon">
+                <div class="flex w-full md:justify-between sm:gap-5 flex-col sm:flex-row">
+                    <label class="mb-1 sm:mb-5 sm:self-center" for="date">Datum:</label>
+                    <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" id="date" type="date">
+                    <label class="mb-1 sm:mb-5 sm:self-center" for="time">Uhrzeit:</label>
+                    <input class="border-2 w-full mb-5 p-2 focus:bg-red-100" id="time" type="time">
+                 </div>
+                 <label class="min-w-2/4 mb-1" for="message">Nachricht</label>
+                 <textarea id="message" class="border-2 w-full mb-5 h-20 p-2 focus:bg-red-100"></textarea>
+                <button class="p-3 font-bold bg-red-500 text-white w-full">Reservierung anfragen!</button>
+            </form>
+            <div class="bg-[url('https://images.pexels.com/photos/10875186/pexels-photo-10875186.jpeg')] bg-center bg-cover bg-no-repeat sm:w-2/4 p-5 min-h-50 hidden sm:block  sm:min-h-fit">
+            </div>
+        </section>
     </main>
     <footer>Footer ((adresse, kontaktdaten, öffnungszeiten, social media links)) -> Chris</footer>
 </body>
